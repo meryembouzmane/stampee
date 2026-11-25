@@ -1,0 +1,36 @@
+.catalogue-filtres,
+.catalogue-filtres__statut,
+.catalogue-filtres__prix,
+.catalogue-filtres__pays,
+.catalogue-filtres__type,
+.catalogue-filtres__conservation,
+.catalogue-filtres__authentification,
+.catalogue-filtres__periode {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espace-petit);
+
+  padding: var(--espace-petit);
+  max-width: 300px;
+}
+
+.catalogue-filtres legend {
+  padding: var(--espace-petit);
+  font-weight: bold;
+}
+
+.catalogue-filtres__prix input,
+.catalogue-filtres__periode input {
+  width: 80px;
+  padding: var(--espace-tres-petit);
+  border: 1px solid var(--couleur-principale);
+  border-radius: 5px;
+  font-size: var(--taille-tres-petit);
+}
+
+.catalogue-filtres__prix input::placeholder {
+  color: var(--couleur-principale);
+  opacity: 1;
+  font-size: var(--taille-petit-texte);
+  text-align: left;
+}

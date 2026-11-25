@@ -1,0 +1,62 @@
+.carte-catalogue {
+  border: 1px solid var(--couleur-secondaire);
+  border-radius: var(--espace-petit);
+  padding: var(--espace-petit);
+  text-align: center;
+  background-color: var(--fond-gris);
+  text-decoration: none;
+  max-height: fit-content;
+}
+
+.carte-catalogue__image img {
+  max-width: 100%;
+  height: 220px;
+  object-fit: cover;
+  margin-bottom: var(--espace-petit);
+}
+
+.carte-catalogue__titre {
+  font-size: var(--taille-texte);
+  font-weight: bold;
+  margin-bottom: var(--espace-petit);
+  text-align: left;
+}
+
+.carte-catalogue__type ul {
+  list-style: none;
+  margin: 0;
+  text-align: left;
+}
+
+.carte-catalogue__type li {
+  margin-bottom: var(--espace-tres-petit);
+  font-size: var(--taille-petit-texte);
+  text-decoration: none;
+}
+
+.carte-catalogue__rebours {
+  display: flex;
+  align-items: center;
+  gap: var(--espace-petit);
+}
+
+.carte-catalogue__rebours span {
+  font-size: var(--taille-petit-texte);
+  margin-top: var(--espace-petit);
+}
+
+.carte-catalogue__rebours svg {
+  width: 20px;
+  height: 20px;
+  padding-top: var(--espace-petit);
+}
+
+.carte-catalogue__action {
+  display: flex;
+  gap: var(--espace-petit);
+  padding: var(--espace-standard) var(--espace-large);
+}
+
+.carte-catalogue__btn {
+  flex-grow: 1;
+}

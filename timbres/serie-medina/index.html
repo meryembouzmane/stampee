@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>L'enchère Série Médina</title>
+  </head>
+  <body>
+    <header>
+      <!-- Top Bar -->
+      <div class="top-bar">
+        <nav class="top-bar__nav">
+          <ul class="top-bar__liste">
+            <li><a href="#">À propos de Lord Stampee</a></li>
+            <li><a href="#">Authentification & certificats</a></li>
+            <li><a href="#">Contactez-nous</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="site-entete">
+        <a href="../../index.html" class="site-entete__logo">
+          <img
+            class="site-entete__img"
+            src="../../assets/img/stampee_logo.webp"
+            alt="logo lord stampee"
+          />
+        </a>
+        <!-- Navigation gauche -->
+        <nav class="site-entete__nav-gauche">
+          <ul class="site-entete__liste--principale">
+            <li class="site-entete__item--categories">
+              <a class="site-entete__categories" href="#"
+                >Catégories
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
+              </a>
+              <ul class="site-entete__liste-secondaire">
+                <li><a href="#">Thèmes</a></li>
+                <li><a href="#">Époques</a></li>
+                <li><a href="#">Types philatéliques</a></li>
+              </ul>
+            </li>
+            <li class="site-entete__item--encheres">
+              <a class="site-entete__encheres" href="#">Enchères</a>
+              <ul class="site-entete__liste-secondaire">
+                <li><a href="#">À venir</a></li>
+                <li><a href="#">En cours</a></li>
+                <li><a href="#">Passées</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <!-- Formulaire de recherche -->
+        <form class="site-entete__recherche">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <circle cx="11" cy="11" r="7" stroke="#C2121F" stroke-width="2" />
+            <line
+              x1="16.65"
+              y1="16.65"
+              x2="21"
+              y2="21"
+              stroke="#C2121F"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+          <label for="search" class="sr-only">Rechercher</label>
+          <input
+            type="search"
+            id="search"
+            name="search"
+            placeholder="Rechercher un timbre, une enchère..."
+          />
+        </form>
+        <!-- Navigation droite-->
+        <nav class="site-entete__nav-droite">
+          <ul class="site-entete__liste--principale-droite">
+            <li>
+              <a href="#">Comment ça marche ? </a>
+              <ul class="site-entete__liste--secondaire-droite">
+                <li><a href="#">Créer un compte</a></li>
+                <li><a href="#">Participer à une enchère</a></li>
+                <li><a href="#">Placer une offre</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#C2121F"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    d="M12 21s-7-4.534-7-10a4 4 0 0 1 7-2.645A4 4 0 0 1 19 11c0 5.466-7 10-7 10z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="site-entete__langue" href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#C2121F"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M3 12h18" />
+                  <path d="M12 3c3 3 3 15 0 18" />
+                  <path d="M7 5.5c3 2.5 7 2.5 10 0" />
+                </svg>
+                FR
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <button class="btn">Se connecter</button>
+      </div>
+    </header>
+    <!-- Début du main -->
+    <main class="rythme">
+      <!-- Fil d'Ariane -->
+      <div class="fil_ariane">
+        <a href="#">Accueil</a>
+        <span> > </span>
+        <a href="#">Enchères</a>
+        <span> > </span>
+        <a href="#">En cours</a>
+        <span> > </span>
+        <a href="#">Série Médina</a>
+      </div>
+      <!-- En-tête de la fiche d'enchère -->
+      <div class="fiche-enchere__entete">
+        <button class="fiche-enchere__fleche" aria-label="Précédent">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="50"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="black"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <polyline points="15 18 9 12 15 6" />
+          </svg>
+        </button>
+        <div class="fiche-enchere__titre">
+          <h1>Fiche d'enchère - Série Médina</h1>
+          <p>Du 03 au 30 Novembre 2025</p>
+        </div>
+        <button class="fiche-enchere__fleche" aria-label="Suivant">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="50"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="black"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <polyline points="9 6 15 12 9 18" />
+          </svg>
+        </button>
+      </div>
+      <!-- Contenu de la fiche d'enchère -->
+      <section class="fiche-enchere__contenu">
+        <!-- partie image -->
+        <div class="fiche-enchere__galerie">
+          <img
+            src="../../assets/img/timbre_maroc.webp"
+            alt="Maroc, 90c, scène de médina"
+          />
+          <a class="fiche-enchere__galerie-lien" href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="galerie-lien__icon"
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect x="3" y="4" width="18" height="14" rx="2" />
+              <circle cx="9" cy="10" r="2" />
+              <path d="M21 20l-6-6-3 3-2-2-5 5" />
+            </svg>
+            <span class="galerie-lien__texte">Galerie d'images</span>
+          </a>
+        </div>
+        <!-- partie détails -->
+        <div class="fiche-enchere__details">
+          <h2 class="fiche-enchere__rythme">Série médina (90c)</h2>
+          <!-- Compte à rebours -->
+          <div class="fiche-enchere__compte-rebours fiche-enchere__rythme">
+            <div
+              class="fiche-enchere__compte-rebours__bloc fiche-enchere__compte-rebours__bloc-bordure"
+            >
+              <span class="fiche-enchere__compte-rebours__valeur">20</span>
+              <span class="fiche-enchere__compte-rebours__label">JOURS</span>
+            </div>
+            <div
+              class="fiche-enchere__compte-rebours__bloc fiche-enchere__compte-rebours__bloc-bordure"
+            >
+              <span class="fiche-enchere__compte-rebours__valeur">06</span>
+              <span class="fiche-enchere__compte-rebours__label">HEURES</span>
+            </div>
+            <div
+              class="fiche-enchere__compte-rebours__bloc fiche-enchere__compte-rebours__bloc-bordure"
+            >
+              <span class="fiche-enchere__compte-rebours__valeur">14</span>
+              <span class="fiche-enchere__compte-rebours__label">MINUTES</span>
+            </div>
+            <div class="fiche-enchere__compte-rebours__bloc">
+              <span class="fiche-enchere__compte-rebours__valeur">16</span>
+              <span class="fiche-enchere__compte-rebours__label">SECONDES</span>
+            </div>
+          </div>
+          <!-- Informations -->
+          <div class="fiche-enchere__infos fiche-enchere__rythme">
+            <div class="fiche-enchere__element">
+              <h3>Sélection philatélique rare</h3>
+              <p class="fiche-enchere__statut">Vente en cours</p>
+              <p>
+                Émis au Maroc dans les années 1950, ce timbre de 90 centimes met
+                en scène une vue animée d'une médina traditionnelle.
+              </p>
+            </div>
+            <div>
+              <ul class="fiche-enchere__infos-liste">
+                <li><strong>Dimensions :</strong> env. 2,5 x 3,5 cm</li>
+                <li><strong>Conservation :</strong> parfaite</li>
+                <li><strong>Tirage :</strong> édition postale limitée</li>
+                <li><strong>Certifié :</strong> original avec cachet</li>
+                <li><strong>Pays d'origine :</strong> Maroc</li>
+              </ul>
+            </div>
+            <div class="fiche-enchere__coup-coeur">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="#C2121F"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+        2 6.5 3.5 5 5.5 5c1.54 0 3.04.99 3.57 2.36H13
+        c.53-1.37 2.03-2.36 3.57-2.36C20.5 5 22 6.5
+        22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                />
+              </svg>
+              <p>Coup de cœur Lord Stampee</p>
+            </div>
+          </div>
+          <!-- Offre actuelle -->
+          <div class="fiche-enchere__offre-actuelle">
+            <p>OFFRE ACTUELLE</p>
+            <div>
+              <span>CAD</span>
+              <span>50</span>
+            </div>
+          </div>
+          <!-- estimation -->
+          <div class="fiche-enchere__estimation">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="#2F49FF"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 3h2v18H5V3zm6 6h2v12h-2V9zm6-4h2v16h-2V5z" />
+              </svg>
+            </div>
+            <p>
+              <strong>Estimation :</strong> CAD 90 - CAD 140
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                fill="#aaa"
+                viewBox="0 0 24 24"
+                style="vertical-align: middle; margin-left: 4px"
+              >
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="#aaa"
+                  stroke-width="2"
+                  fill="none"
+                />
+                <line
+                  x1="12"
+                  y1="8"
+                  x2="12"
+                  y2="12"
+                  stroke="#aaa"
+                  stroke-width="2"
+                />
+                <circle cx="12" cy="16" r="1" fill="#aaa" />
+              </svg>
+            </p>
+          </div>
+          <!-- offres rapides -->
+          <div class="fiche-enchere__offres-rapides fiche-enchere__rythme">
+            <div class="fiche-enchere__choix">
+              <button>55 CAD</button>
+              <button>57 CAD</button>
+              <button>60 CAD</button>
+            </div>
+            <div class="fiche-enchere__champs">
+              <label for="offre">Entrez le montant de votre offre</label>
+              <input
+                class="fiche-enchere__champ"
+                name="offre"
+                id="offre"
+                type="number"
+                min="55"
+                placeholder="55 CAD ou plus"
+              />
+            </div>
+            <div class="fiche-enchere_actions">
+              <button class="btn">Placer l'offre</button>
+              <button class="btn">Fixez l'offre max</button>
+            </div>
+          </div>
+          <!-- expert -->
+          <div class="fiche-enchere__expert fiche-enchere__rythme">
+            <picture>
+              <img
+                src="../../assets/img/expert.webp"
+                alt="expert en philatélie"
+              />
+            </picture>
+            <div>
+              <p class="fiche-enchere__expert-nom">Emile Durand</p>
+              <p>Spécialiste en philatélie et collections historiques</p>
+              <a class="fiche-enchere__expert-lien" href="#"
+                >Question à l'expert ?</a
+              >
+            </div>
+          </div>
+          <!-- réseaux sociaux -->
+          <div class="fiche-enchere__reseaux fiche-enchere__rythme">
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="none"
+                stroke="black"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.5" y2="6.5" />
+              </svg>
+            </a>
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="none"
+                stroke="black"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                />
+              </svg>
+            </a>
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="none"
+                stroke="black"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"
+                />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="none"
+                stroke="black"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M8.5 22c.5-2 1.2-5 1.3-6.2a5.5 5.5 0 0 1-.4-2.3c0-1.5.8-2.6 1.8-2.6 1 0 1.4.8 1.4 1.8 0 1-.7 2.5-1 3.9-.3 1.3.7 2.3 2 2.3 2.4 0 4.2-2.5 4.2-5.9 0-3.1-2.2-5.3-5.4-5.3-3.7 0-5.9 2.8-5.9 5.7 0 1.1.4 2.3 1 2.9.1.1.1.2.1.4-.1.5-.3 1.5-.4 1.7-.1.2-.2.3-.4.2-1.4-.6-2.2-2.4-2.2-4.2 0-3.3 2.7-7.3 8.1-7.3 4.3 0 7.1 3.1 7.1 6.5 0 4-2.2 7-5.4 7-1.1 0-2.1-.6-2.4-1.3l-.7 2.7c-.2.7-.6 1.5-1 2z"
+                />
+              </svg>
+            </a>
+          </div>
+          <a class="fiche-enchere__expert-lien" href="#"
+            >Voir des timbres similaires</a
+          >
+        </div>
+      </section>
+    </main>
+    <!-- Début du footer -->
+    <footer class="site-pied-de-page rythme">
+      <!-- Conteneur principal -->
+      <div class="site-pied-de-page__conteneur">
+        <section class="site-pied-de-page__section">
+          <h3>Actualités</h3>
+          <ul class="site-pied-de-page__list">
+            <li><a href="#">Timbres</a></li>
+            <li><a href="#">Enchères</a></li>
+            <li><a href="#">Bridge</a></li>
+          </ul>
+        </section>
+
+        <section class="site-pied-de-page__section">
+          <h3>Contactez-nous</h3>
+          <ul class="site-pied-de-page__list">
+            <li><a href="#">Formulaire</a></li>
+            <li><a href="#">Adresse</a></li>
+            <li><a href="#">Support technique</a></li>
+          </ul>
+        </section>
+
+        <section class="site-pied-de-page__section">
+          <h3>Termes et conditions</h3>
+          <ul class="site-pied-de-page__list">
+            <li><a href="#">Conditions générales</a></li>
+            <li><a href="#">Politique de confidentialité</a></li>
+            <li><a href="#">Politique de remboursement</a></li>
+          </ul>
+        </section>
+        <!-- Infolettre -->
+        <section class="site-pied-de-page__section">
+          <h3>Infolettre</h3>
+          <form class="site-pied-de-page__infolettre">
+            <label for="courriel" class="sr-only">Courriel</label>
+            <input
+              id="courriel"
+              name="courriel"
+              type="email"
+              placeholder="Votre courriel"
+            />
+            <button class="btn site-pied-de-page__infolettre-btn" type="submit">
+              S'abonner
+            </button>
+          </form>
+        </section>
+      </div>
+      <!-- Conteneur secondaire -->
+      <div class="site-pied-de-page__legal">
+        <p class="site-pied-de-page__texte">© 2025 Lord Stampee</p>
+        <ul class="site-pied-de-page__social">
+          <li>
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-label="Facebook"
+                role="img"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <path
+                  d="M14 8h-1.6a2.4 2.4 0 0 0-2.4 2.4V12H8.8v2.6h1.2V19h2.8v-4.4h2l.6-2.6h-2.6v-1.5
+          c0-.5.4-.9.9-.9H16V8h-2z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-label="Instagram"
+                role="img"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-label="LinkedIn"
+                role="img"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <path d="M8 17v-7M8 7.5h0" />
+                <path d="M12 17v-4a3 3 0 0 1 6 0v4" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-label="X"
+                role="img"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <path d="M8 8l8 8M16 8l-8 8" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

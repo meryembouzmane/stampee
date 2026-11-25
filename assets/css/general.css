@@ -1,0 +1,78 @@
+:root {
+  /* Couleurs */
+  --couleur-principale: #01304a;
+  --couleur-secondaire: #c2121f;
+  --couleur-tertiaire: #192ed7;
+  --texte: #000000;
+  --hover-principal: #669bbd;
+  --hover-secondaire: #780001;
+  --fond-gris: #efefef;
+  --fond-blanc: #ffffff;
+
+  /* Polices */
+  --font-titre: "Abril Fatface", serif;
+  --font-texte: "Raleway", sans-serif;
+  --taille-titre: 1.5em;
+  --taille-titre2: 1.2em;
+  --taille-texte: 1em;
+  --taille-petit-texte: 0.8em;
+
+  /* Espacement */
+  --espace-tres-large: 60px;
+  --espace-large: 40px;
+  --espace-standard: 20px;
+  --espace-petit: 10px;
+  --espace-tres-petit: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-texte);
+  color: var(--texte);
+  background-color: var(--fond-blanc);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-titre);
+  color: var(--couleur-principale);
+  font-weight: bold;
+}
+
+main {
+  padding-inline: var(--espace-tres-large);
+}
+
+main h1 {
+  font-size: var(--taille-titre);
+}
+
+.rythme {
+  margin-top: var(--espace-large);
+}
+
+.btn {
+  padding: var(--espace-petit) var(--espace-standard);
+  background-color: var(--couleur-tertiaire);
+  color: var(--fond-blanc);
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: var(--taille-texte);
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+
+.btn:hover {
+  background-color: var(--hover-principal);
+}

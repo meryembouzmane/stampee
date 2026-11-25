@@ -1,0 +1,7 @@
+.catalogue {
+  display: flex;
+  gap: var(--espace-standard);
+  flex-wrap: wrap;
+
+  padding-top: var(--espace-large);
+}

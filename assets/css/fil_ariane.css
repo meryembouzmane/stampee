@@ -1,0 +1,15 @@
+.fil_ariane {
+  display: flex;
+  gap: var(--espace-petit);
+  padding-bottom: var(--espace-large);
+}
+
+.fil_ariane a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--couleur-principal);
+}
+
+.fil_ariane a:hover {
+  color: var(--hover-principal);
+}

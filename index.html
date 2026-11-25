@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Catalogue des enchères</title>
+  </head>
+  <body>
+    <!-- Début du header -->
+    <!-- logo -->
+    <header>
+      <!-- Top Bar -->
+      <div class="top-bar">
+        <nav class="top-bar__nav">
+          <ul class="top-bar__liste">
+            <li><a href="apropos.html">À propos de Lord Stampee</a></li>
+            <li>
+              <a href="guide/authentification.html"
+                >Authentification & certificats</a
+              >
+            </li>
+            <li><a href="contact.html">Contactez-nous</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="site-entete">
+        <a href="index.html" class="site-entete__logo">
+          <img
+            class="site-entete__img"
+            src="assets/img/stampee_logo.webp"
+            alt="logo lord stampee"
+          />
+        </a>
+        <!-- Navigation gauche -->
+        <nav class="site-entete__nav-gauche">
+          <ul class="site-entete__liste--principale">
+            <li class="site-entete__item--categories">
+              <a class="site-entete__categories" href="#"
+                >Catégories
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
+              </a>
+              <ul class="site-entete__liste-secondaire">
+                <li><a href="#">Thèmes</a></li>
+                <li><a href="#">Époques</a></li>
+                <li><a href="#">Types philatéliques</a></li>
+              </ul>
+            </li>
+            <li class="site-entete__item--encheres">
+              <a class="site-entete__encheres" href="#">Enchères</a>
+              <ul class="site-entete__liste-secondaire">
+                <li><a href="#">À venir</a></li>
+                <li><a href="#">En cours</a></li>
+                <li><a href="#">Passées</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <!-- Formulaire de recherche -->
+        <form class="site-entete__recherche">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <circle cx="11" cy="11" r="7" stroke="#C2121F" stroke-width="2" />
+            <line
+              x1="16.65"
+              y1="16.65"
+              x2="21"
+              y2="21"
+              stroke="#C2121F"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+          <label for="search" class="sr-only">Rechercher</label>
+          <input
+            type="search"
+            id="search"
+            name="search"
+            placeholder="Rechercher un timbre, une enchère..."
+          />
+        </form>
+        <!-- Navigation droite-->
+        <nav class="site-entete__nav-droite">
+          <ul class="site-entete__liste--principale-droite">
+            <li>
+              <a href="#">Comment ça marche ? </a>
+              <ul class="site-entete__liste--secondaire-droite">
+                <li><a href="#">Créer un compte</a></li>
+                <li><a href="#">Participer à une enchère</a></li>
+                <li><a href="#">Placer une offre</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#C2121F"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    d="M12 21s-7-4.534-7-10a4 4 0 0 1 7-2.645A4 4 0 0 1 19 11c0 5.466-7 10-7 10z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="site-entete__langue" href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#C2121F"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M3 12h18" />
+                  <path d="M12 3c3 3 3 15 0 18" />
+                  <path d="M7 5.5c3 2.5 7 2.5 10 0" />
+                </svg>
+                FR
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <button class="btn">Se connecter</button>
+      </div>
+    </header>
+    <!-- Début du main -->
+    <main class="rythme">
+      <!-- Fil d'Ariane -->
+      <div class="fil_ariane">
+        <a href="#">Accueil</a>
+        <span> > </span>
+        <a href="#">Enchères</a>
+        <span> > </span>
+        <a href="#">En cours</a>
+      </div>
+      <!-- Contenu -->
+      <h1>Enchères en cours</h1>
+      <div class="catalogue">
+        <!-- Filtres -->
+        <aside class="catalogue-filtres">
+          <h2>Filtres</h2>
+          <form>
+            <fieldset class="catalogue-filtres__statut">
+              <legend>Statut</legend>
+              <label for="encours">
+                <input type="radio" name="statut" id="encours" />
+                En cours
+              </label>
+              <label for="avenir">
+                <input type="radio" name="statut" id="avenir" />
+                À venir
+              </label>
+              <label for="passees">
+                <input type="radio" name="statut" id="passees" />
+                Passées
+              </label>
+            </fieldset>
+          </form>
+          <form>
+            <fieldset class="catalogue-filtres__prix">
+              <legend>Prix</legend>
+              <div>
+                <label for="de">De</label>
+                <input
+                  type="text"
+                  name="prix_de"
+                  id="de"
+                  placeholder="Min (CAD)"
+                />
+                <label for="a">À</label>
+                <input
+                  type="text"
+                  name="prix_a"
+                  id="a"
+                  placeholder="Max (CAD)"
+                />
+              </div>
+              <div>
+                <button>Appliquer</button>
+                <button>Réinitialiser</button>
+              </div>
+            </fieldset>
+          </form>
+          <form>
+            <fieldset class="catalogue-filtres__pays">
+              <legend>Pays</legend>
+              <label for="angleterre">
+                <input type="checkbox" name="pays" id="angleterre" />
+                Angleterre
+              </label>
+              <label for="canada">
+                <input type="checkbox" name="pays" id="canada" />
+                Canada
+              </label>
+              <label for="etats-unis">
+                <input type="checkbox" name="pays" id="etats-unis" />
+                États-Unis
+              </label>
+              <label for="australie">
+                <input type="checkbox" name="pays" id="australie" />
+                Australie
+              </label>
+            </fieldset>
+          </form>
+          <form>
+            <fieldset class="catalogue-filtres__periode">
+              <legend>Période</legend>
+              <div>
+                <label for="annee-de">De</label>
+                <input
+                  id="annee-de"
+                  name="annee-de"
+                  type="number"
+                  placeholder="ex. 1850"
+                  min="1840"
+                  max="2100"
+                />
+                <label for="annee-a">À</label>
+                <input
+                  id="annee-a"
+                  type="number"
+                  name="annee-a"
+                  placeholder="ex. 1900"
+                  min="1840"
+                  max="2100"
+                />
+              </div>
+              <div>
+                <button>Appliquer</button>
+              </div>
+            </fieldset>
+          </form>
+          <form>
+            <fieldset class="catalogue-filtres__type">
+              <legend>Type</legend>
+              <label for="poste">
+                <input type="checkbox" name="type" id="poste" />
+                Timbres-poste
+              </label>
+              <label for="courant">
+                <input type="checkbox" name="type" id="courant" />
+                Timbres courants
+              </label>
+              <label for="fiscal">
+                <input type="checkbox" name="type" id="fiscal" />
+                Timbres fiscaux
+              </label>
+              <label for="service">
+                <input type="checkbox" name="type" id="service" />
+                Service
+              </label>
+            </fieldset>
+          </form>
+          <form>
+            <fieldset class="catalogue-filtres__conservation">
+              <legend>Conservation</legend>
+              <label for="parfait">
+                <input type="checkbox" name="conservation" id="parfait" />
+                Parfaite
+              </label>
+              <label for="tres-bon">
+                <input type="checkbox" name="conservation" id="tres-bon" />
+                Très bonne
+              </label>
+              <label for="bon">
+                <input type="checkbox" name="conservation" id="bon" />
+                Bonne
+              </label>
+              <label for="acceptable">
+                <input type="checkbox" name="conservation" id="acceptable" />
+                Acceptable
+              </label>
+            </fieldset>
+          </form>
+          <form>
+            <fieldset class="catalogue-filtres__authentification">
+              <legend>Authentification</legend>
+              <div>
+                <label for="certifie">
+                  <input
+                    type="checkbox"
+                    name="authentification"
+                    id="certifie"
+                  />
+                  Certifié (BPA, BPP, AIEP, RPSL…)
+                </label>
+              </div>
+              <div>
+                <label for="ref-catalogue">Catalogue</label>
+                <select id="ref-catalogue" name="catalogue">
+                  <option>Catalogue…</option>
+                </select>
+              </div>
+              <div>
+                <label for="ref-num">Numéro</label>
+                <input
+                  id="ref-num"
+                  name="authentification"
+                  type="text"
+                  placeholder="N°"
+                />
+              </div>
+            </fieldset>
+          </form>
+        </aside>
+        <!-- Catalogue -->
+        <section class="catalogue-grille">
+          <h2 class="sr-only">Catalogue</h2>
+          <!-- 1 -->
+          <article class="carte-catalogue">
+            <picture class="carte-catalogue__image">
+              <img
+                src="assets/img/timbre_sarawak.webp"
+                alt="Sarawak, Coronation 1953, 10 cents"
+              />
+            </picture>
+            <h2 class="carte-catalogue__titre">
+              Sarawak,Couronnement 1953 (10c)
+            </h2>
+            <div class="carte-catalogue__info">
+              <div class="carte-catalogue__type">
+                <ul>
+                  <li>Pays : Malaisie</li>
+                  <li>Prix de base : 120 CAD</li>
+                </ul>
+              </div>
+              <div class="carte-catalogue__rebours">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  aria-label="Sablier"
+                  role="img"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M6 2h12a1 1 0 0 1 0 2h-1.2c-.3 3.1-2.6 4.5-4.3 5.7 1.7 1.2 4 2.6 4.3 5.7H18a1 1 0 0 1 0 2H6a1 1 0 0 1 0-2h1.2c.3-3.1 2.6-4.5 4.3-5.7-1.7-1.2-4-2.6-4.3-5.7H6a1 1 0 0 1 0-2z"
+                  />
+                </svg>
+                <span>Il reste 2j : 18h : 30m</span>
+              </div>
+            </div>
+            <div class="carte-catalogue__action">
+              <a class="btn carte-catalogue__btn" href="#"> Voir l'enchère </a>
+            </div>
+          </article>
+
+          <!-- 2 -->
+          <article class="carte-catalogue">
+            <picture class="carte-catalogue__image">
+              <img
+                src="assets/img/timbre_niger.webp"
+                alt="Niger 1973, Vénus de Milo, 50F"
+              />
+            </picture>
+            <h2 class="carte-catalogue__titre">Vénus de Milo, 1973 (50F)</h2>
+            <div class="carte-catalogue__info">
+              <div class="carte-catalogue__type">
+                <ul>
+                  <li>Pays : Niger</li>
+                  <li>Prix de base : 60 CAD</li>
+                </ul>
+              </div>
+              <div class="carte-catalogue__rebours">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  aria-label="Sablier"
+                  role="img"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M6 2h12a1 1 0 0 1 0 2h-1.2c-.3 3.1-2.6 4.5-4.3 5.7 1.7 1.2 4 2.6 4.3 5.7H18a1 1 0 0 1 0 2H6a1 1 0 0 1 0-2h1.2c.3-3.1 2.6-4.5 4.3-5.7-1.7-1.2-4-2.6-4.3-5.7H6a1 1 0 0 1 0-2z"
+                  />
+                </svg>
+                <span>Il reste 5j : 06h : 34m</span>
+              </div>
+            </div>
+            <div class="carte-catalogue__action">
+              <a class="btn carte-catalogue__btn" href="#"> Voir l'enchère </a>
+            </div>
+          </article>
+
+          <!-- 3 -->
+          <article class="carte-catalogue">
+            <picture class="carte-catalogue__image">
+              <img
+                src="assets/img/timbre_slovenie.webp"
+                alt="Daphne Blagayana, 10 bani, oblitéré"
+              />
+            </picture>
+            <h2 class="carte-catalogue__titre">Daphne blagayana (10 bani)</h2>
+            <div class="carte-catalogue__info">
+              <div class="carte-catalogue__type">
+                <ul>
+                  <li>Pays : Slovénie (ex-Yougoslavie)</li>
+                  <li>Prix de base : 25 CAD</li>
+                </ul>
+              </div>
+              <div class="carte-catalogue__rebours">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  aria-label="Sablier"
+                  role="img"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M6 2h12a1 1 0 0 1 0 2h-1.2c-.3 3.1-2.6 4.5-4.3 5.7 1.7 1.2 4 2.6 4.3 5.7H18a1 1 0 0 1 0 2H6a1 1 0 0 1 0-2h1.2c.3-3.1 2.6-4.5 4.3-5.7-1.7-1.2-4-2.6-4.3-5.7H6a1 1 0 0 1 0-2z"
+                  />
+                </svg>
+                <span>6j : 08h : 10m</span>
+              </div>
+            </div>
+            <div class="carte-catalogue__action">
+              <a class="btn carte-catalogue__btn" href="#"> Voir l'enchère </a>
+            </div>
+          </article>
+
+          <!-- 4 -->
+          <article class="carte-catalogue">
+            <picture class="carte-catalogue__image">
+              <img
+                src="assets/img/timbre_italie.webp"
+                alt="Italie 1975, Fontaine de Trevi, 25"
+              />
+            </picture>
+            <h2 class="carte-catalogue__titre">Fontaine de Trevi, 1975</h2>
+            <div class="carte-catalogue__info">
+              <div class="carte-catalogue__type">
+                <ul>
+                  <li>Pays : Italie</li>
+                  <li>Prix de base : 45 CAD</li>
+                </ul>
+              </div>
+              <div class="carte-catalogue__rebours">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  aria-label="Sablier"
+                  role="img"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M6 2h12a1 1 0 0 1 0 2h-1.2c-.3 3.1-2.6 4.5-4.3 5.7 1.7 1.2 4 2.6 4.3 5.7H18a1 1 0 0 1 0 2H6a1 1 0 0 1 0-2h1.2c.3-3.1 2.6-4.5 4.3-5.7-1.7-1.2-4-2.6-4.3-5.7H6a1 1 0 0 1 0-2z"
+                  />
+                </svg>
+                <span>Il reste 4j : 16h : 41m</span>
+              </div>
+            </div>
+            <div class="carte-catalogue__action">
+              <a class="btn carte-catalogue__btn" href="#"> Voir l'enchère </a>
+            </div>
+          </article>
+
+          <!-- 5 -->
+          <article class="carte-catalogue">
+            <picture class="carte-catalogue__image">
+              <img
+                src="assets/img/timbre_maroc.webp"
+                alt="Maroc, 90c, scène de médina"
+              />
+            </picture>
+            <h2 class="carte-catalogue__titre">Série médina (90c)</h2>
+            <div class="carte-catalogue__info">
+              <div class="carte-catalogue__type">
+                <ul>
+                  <li>Pays : Maroc</li>
+                  <li>Prix de base : 35 CAD</li>
+                </ul>
+              </div>
+              <div class="carte-catalogue__rebours">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  aria-label="Sablier"
+                  role="img"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M6 2h12a1 1 0 0 1 0 2h-1.2c-.3 3.1-2.6 4.5-4.3 5.7 1.7 1.2 4 2.6 4.3 5.7H18a1 1 0 0 1 0 2H6a1 1 0 0 1 0-2h1.2c.3-3.1 2.6-4.5 4.3-5.7-1.7-1.2-4-2.6-4.3-5.7H6a1 1 0 0 1 0-2z"
+                  />
+                </svg>
+                <span>Il reste 0j : 09h : 55m</span>
+              </div>
+            </div>
+            <div class="carte-catalogue__action">
+              <a
+                class="btn carte-catalogue__btn"
+                href="timbres/serie-medina/index.html"
+              >
+                Voir l'enchère
+              </a>
+            </div>
+          </article>
+
+          <!-- 6 -->
+          <article class="carte-catalogue">
+            <picture class="carte-catalogue__image">
+              <img
+                src="assets/img/timbre_royaume_uni.webp"
+                alt="Royaume-Uni, 25e anniversaire du couronnement, 9p"
+              />
+            </picture>
+            <h2 class="carte-catalogue__titre">25e du couronnement (9p)</h2>
+            <div class="carte-catalogue__info">
+              <div class="carte-catalogue__type">
+                <ul>
+                  <li>Pays : Royaume-Uni</li>
+                  <li>Prix de base : 22 CAD</li>
+                </ul>
+              </div>
+              <div class="carte-catalogue__rebours">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  aria-label="Sablier"
+                  role="img"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M6 2h12a1 1 0 0 1 0 2h-1.2c-.3 3.1-2.6 4.5-4.3 5.7 1.7 1.2 4 2.6 4.3 5.7H18a1 1 0 0 1 0 2H6a1 1 0 0 1 0-2h1.2c.3-3.1 2.6-4.5 4.3-5.7-1.7-1.2-4-2.6-4.3-5.7H6a1 1 0 0 1 0-2z"
+                  />
+                </svg>
+                <span>Il reste 8j : 21h : 09m</span>
+              </div>
+            </div>
+            <div class="carte-catalogue__action">
+              <a class="btn carte-catalogue__btn" href="#"> Voir l'enchère </a>
+            </div>
+          </article>
+
+          <!-- 7 -->
+          <article class="carte-catalogue">
+            <picture class="carte-catalogue__image">
+              <img
+                src="assets/img/timbre_france.webp"
+                alt="France 1959, Floralies parisiennes, 15F"
+              />
+            </picture>
+            <h2 class="carte-catalogue__titre">Floralies parisiennes, 1959</h2>
+            <div class="carte-catalogue__info">
+              <div class="carte-catalogue__type">
+                <ul>
+                  <li>Pays : France</li>
+                  <li>Prix de base : 38 CAD</li>
+                </ul>
+              </div>
+              <div class="carte-catalogue__rebours">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  aria-label="Sablier"
+                  role="img"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M6 2h12a1 1 0 0 1 0 2h-1.2c-.3 3.1-2.6 4.5-4.3 5.7 1.7 1.2 4 2.6 4.3 5.7H18a1 1 0 0 1 0 2H6a1 1 0 0 1 0-2h1.2c.3-3.1 2.6-4.5 4.3-5.7-1.7-1.2-4-2.6-4.3-5.7H6a1 1 0 0 1 0-2z"
+                  />
+                </svg>
+                <span>Il reste 4j : 20h : 47m</span>
+              </div>
+            </div>
+            <div class="carte-catalogue__action">
+              <a class="btn carte-catalogue__btn" href="#"> Voir l'enchère </a>
+            </div>
+          </article>
+
+          <!-- 8 -->
+          <article class="carte-catalogue">
+            <picture class="carte-catalogue__image">
+              <img
+                src="assets/img/timbre_argentine.webp"
+                alt="Argentine, Golondrina, 50+20c, bleu"
+              />
+            </picture>
+            <h2 class="carte-catalogue__titre">Golondrina (50+20c)</h2>
+            <div class="carte-catalogue__info">
+              <div class="carte-catalogue__type">
+                <ul>
+                  <li>Pays : Argentine</li>
+                  <li>Prix de base : 30 CAD</li>
+                </ul>
+              </div>
+              <div class="carte-catalogue__rebours">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  aria-label="Sablier"
+                  role="img"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M6 2h12a1 1 0 0 1 0 2h-1.2c-.3 3.1-2.6 4.5-4.3 5.7 1.7 1.2 4 2.6 4.3 5.7H18a1 1 0 0 1 0 2H6a1 1 0 0 1 0-2h1.2c.3-3.1 2.6-4.5 4.3-5.7-1.7-1.2-4-2.6-4.3-5.7H6a1 1 0 0 1 0-2z"
+                  />
+                </svg>
+                <span>Il reste 2j : 13h : 45m</span>
+              </div>
+            </div>
+            <div class="carte-catalogue__action">
+              <a class="btn carte-catalogue__btn" href="#"> Voir l'enchère </a>
+            </div>
+          </article>
+
+          <!-- 9 -->
+          <article class="carte-catalogue">
+            <picture class="carte-catalogue__image">
+              <img
+                src="assets/img/timbre_canada.webp"
+                alt="Canada — Oies sauvages en vol, 15 cents, bleu"
+              />
+            </picture>
+            <h2 class="carte-catalogue__titre">
+              Oies sauvages en vol (15 cents)
+            </h2>
+            <div class="carte-catalogue__info">
+              <div class="carte-catalogue__type">
+                <ul>
+                  <li>Pays : Canada</li>
+                  <li>Prix de base : 85 CAD</li>
+                </ul>
+              </div>
+              <div class="carte-catalogue__rebours">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  aria-label="Sablier"
+                  role="img"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M6 2h12a1 1 0 0 1 0 2h-1.2c-.3 3.1-2.6 4.5-4.3 5.7 1.7 1.2 4 2.6 4.3 5.7H18a1 1 0 0 1 0 2H6a1 1 0 0 1 0-2h1.2c.3-3.1 2.6-4.5 4.3-5.7-1.7-1.2-4-2.6-4.3-5.7H6a1 1 0 0 1 0-2z"
+                  />
+                </svg>
+                <span>Il reste 10j : 13h : 45m</span>
+              </div>
+            </div>
+            <div class="carte-catalogue__action">
+              <a class="btn carte-catalogue__btn" href="#"> Voir l'enchère </a>
+            </div>
+          </article>
+
+          <!-- 10 -->
+          <article class="carte-catalogue">
+            <picture class="carte-catalogue__image">
+              <img
+                src="assets/img/timbre_japon.webp"
+                alt="Japon, Bijin-ga sous la neige (60)"
+              />
+            </picture>
+            <h2 class="carte-catalogue__titre">Bijin-ga sous la neige (60)</h2>
+            <div class="carte-catalogue__info">
+              <div class="carte-catalogue__type">
+                <ul>
+                  <li>Pays : Japon</li>
+                  <li>Prix de base : 48 CAD</li>
+                </ul>
+              </div>
+              <div class="carte-catalogue__rebours">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  aria-label="Sablier"
+                  role="img"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M6 2h12a1 1 0 0 1 0 2h-1.2c-.3 3.1-2.6 4.5-4.3 5.7 1.7 1.2 4 2.6 4.3 5.7H18a1 1 0 0 1 0 2H6a1 1 0 0 1 0-2h1.2c.3-3.1 2.6-4.5 4.3-5.7-1.7-1.2-4-2.6-4.3-5.7H6a1 1 0 0 1 0-2z"
+                  />
+                </svg>
+                <span>Il reste 0j : 13h : 45m</span>
+              </div>
+            </div>
+            <div class="carte-catalogue__action">
+              <a class="btn carte-catalogue__btn" href="#"> Voir l'enchère </a>
+            </div>
+          </article>
+
+          <!-- 11 -->
+          <article class="carte-catalogue">
+            <picture class="carte-catalogue__image">
+              <img
+                src="assets/img/timbre_martinique.webp"
+                alt="Martinique, Portrait féminin (10c)"
+              />
+            </picture>
+            <h2 class="carte-catalogue__titre">Portrait féminin (10c)</h2>
+            <div class="carte-catalogue__info">
+              <div class="carte-catalogue__type">
+                <ul>
+                  <li>Pays : Martinique</li>
+                  <li>Prix de base : 40 CAD</li>
+                </ul>
+              </div>
+              <div class="carte-catalogue__rebours">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  aria-label="Sablier"
+                  role="img"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M6 2h12a1 1 0 0 1 0 2h-1.2c-.3 3.1-2.6 4.5-4.3 5.7 1.7 1.2 4 2.6 4.3 5.7H18a1 1 0 0 1 0 2H6a1 1 0 0 1 0-2h1.2c.3-3.1 2.6-4.5 4.3-5.7-1.7-1.2-4-2.6-4.3-5.7H6a1 1 0 0 1 0-2z"
+                  />
+                </svg>
+                <span>Il reste 6j : 13h : 45m</span>
+              </div>
+            </div>
+            <div class="carte-catalogue__action">
+              <a class="btn carte-catalogue__btn" href="#"> Voir l'enchère </a>
+            </div>
+          </article>
+
+          <!-- 12 -->
+          <article class="carte-catalogue">
+            <picture class="carte-catalogue__image">
+              <img
+                src="assets/img/timbre_monaco.webp"
+                alt="Monaco — Botticelli « Le Printemps » (15,00)"
+              />
+            </picture>
+            <h2 class="carte-catalogue__titre">Botticelli « Le Printemps »</h2>
+            <div class="carte-catalogue__info">
+              <div class="carte-catalogue__type">
+                <ul>
+                  <li>Pays : Monaco</li>
+                  <li>Prix de base : 120 CAD</li>
+                </ul>
+              </div>
+              <div class="carte-catalogue__rebours">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  aria-label="Sablier"
+                  role="img"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M6 2h12a1 1 0 0 1 0 2h-1.2c-.3 3.1-2.6 4.5-4.3 5.7 1.7 1.2 4 2.6 4.3 5.7H18a1 1 0 0 1 0 2H6a1 1 0 0 1 0-2h1.2c.3-3.1 2.6-4.5 4.3-5.7-1.7-1.2-4-2.6-4.3-5.7H6a1 1 0 0 1 0-2z"
+                  />
+                </svg>
+                <span>Il reste 5j : 13h : 45m</span>
+              </div>
+            </div>
+            <div class="carte-catalogue__action">
+              <a class="btn carte-catalogue__btn" href="#"> Voir l'enchère </a>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+    <!-- Début du footer -->
+    <footer class="site-pied-de-page rythme">
+      <!-- Conteneur principal -->
+      <div class="site-pied-de-page__conteneur">
+        <section class="site-pied-de-page__section">
+          <h3>Actualités</h3>
+          <ul class="site-pied-de-page__list">
+            <li><a href="#">Timbres</a></li>
+            <li><a href="#">Enchères</a></li>
+            <li><a href="#">Bridge</a></li>
+          </ul>
+        </section>
+
+        <section class="site-pied-de-page__section">
+          <h3>Contactez-nous</h3>
+          <ul class="site-pied-de-page__list">
+            <li><a href="#">Formulaire</a></li>
+            <li><a href="#">Adresse</a></li>
+            <li><a href="#">Support technique</a></li>
+          </ul>
+        </section>
+
+        <section class="site-pied-de-page__section">
+          <h3>Termes et conditions</h3>
+          <ul class="site-pied-de-page__list">
+            <li><a href="#">Conditions générales</a></li>
+            <li><a href="#">Politique de confidentialité</a></li>
+            <li><a href="#">Politique de remboursement</a></li>
+          </ul>
+        </section>
+        <!-- Infolettre -->
+        <section class="site-pied-de-page__section">
+          <h3>Infolettre</h3>
+
+          <form class="site-pied-de-page__infolettre">
+            <label for="courriel" class="sr-only">Courriel</label>
+            <input
+              id="courriel"
+              name="courriel"
+              type="email"
+              placeholder="Votre courriel"
+            />
+            <button class="btn site-pied-de-page__infolettre-btn" type="submit">
+              S'abonner
+            </button>
+          </form>
+        </section>
+      </div>
+      <!-- Conteneur secondaire -->
+      <div class="site-pied-de-page__legal">
+        <p class="site-pied-de-page__texte">© 2025 Lord Stampee</p>
+        <ul class="site-pied-de-page__social">
+          <li>
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-label="Facebook"
+                role="img"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <path
+                  d="M14 8h-1.6a2.4 2.4 0 0 0-2.4 2.4V12H8.8v2.6h1.2V19h2.8v-4.4h2l.6-2.6h-2.6v-1.5
+          c0-.5.4-.9.9-.9H16V8h-2z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-label="Instagram"
+                role="img"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-label="LinkedIn"
+                role="img"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <path d="M8 17v-7M8 7.5h0" />
+                <path d="M12 17v-4a3 3 0 0 1 6 0v4" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-label="X"
+                role="img"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <path d="M8 8l8 8M16 8l-8 8" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

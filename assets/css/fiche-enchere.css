@@ -1,0 +1,218 @@
+/* Contenu de la fiche d'enchère */
+.fiche-enchere__contenu {
+  display: flex;
+  gap: var(--espace-standard);
+  justify-content: space-around;
+  align-items: center;
+
+  padding: var(--espace-tres-large);
+}
+
+/* partie image */
+.fiche-enchere__galerie {
+  max-width: 400px;
+  padding-left: var(--espace-tres-large);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--espace-tres-large);
+}
+
+.fiche-enchere__galerie img {
+  max-width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.fiche-enchere__galerie:hover img {
+  transform: scale(1.2);
+}
+
+.fiche-enchere__galerie-lien {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--espace-petit);
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--couleur-principale);
+  font-weight: 700;
+}
+
+.fiche-enchere__galerie-lien:hover {
+  color: var(--couleur-secondaire);
+}
+
+.galerie-lien__icon {
+  width: 22px;
+  height: 22px;
+}
+
+/* partie détails */
+.fiche-enchere__rythme {
+  padding-bottom: var(--espace-standard);
+  border-bottom: 2px solid var(--couleur-principale);
+}
+
+.fiche-enchere__details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espace-standard);
+
+  max-width: 500px;
+}
+
+/* compte à rebours */
+.fiche-enchere__compte-rebours {
+  display: flex;
+  justify-content: space-around;
+}
+
+.fiche-enchere__compte-rebours__bloc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fiche-enchere__compte-rebours__bloc-bordure {
+  padding-right: var(--espace-large);
+  border-right: 1px solid var(--couleur-principale);
+}
+
+.fiche-enchere__compte-rebours__valeur {
+  font-weight: bold;
+  font-size: var(--taille-titre);
+}
+
+.fiche-enchere__compte-rebours__label {
+  font-size: var(--taille-petit-texte);
+}
+
+/* Informations */
+.fiche-enchere__infos {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espace-petit);
+}
+
+.fiche-enchere__element {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espace-tres-petit);
+}
+
+.fiche-enchere__statut {
+  font-weight: bold;
+}
+
+.fiche-enchere__infos-liste {
+  list-style: none;
+}
+
+.fiche-enchere__coup-coeur {
+  display: flex;
+  align-items: center;
+  gap: var(--espace-petit);
+  color: var(--couleur-secondaire);
+  font-weight: bold;
+}
+
+/* Offre actuelle */
+.fiche-enchere__offre-actuelle {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espace-tres-petit);
+}
+
+.fiche-enchere__offre-actuelle span,
+.fiche-enchere__offre-actuelle p {
+  font-weight: bold;
+}
+
+/* estimation */
+.fiche-enchere__estimation {
+  display: flex;
+  align-items: center;
+  gap: var(--espace-petit);
+}
+
+/* offres rapides */
+.fiche-enchere__offres-rapides,
+.fiche-enchere__champs {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espace-petit);
+}
+
+.fiche-enchere__choix {
+  display: flex;
+  justify-content: flex-start;
+  gap: var(--espace-standard);
+}
+
+.fiche-enchere__choix button {
+  padding: var(--espace-tres-petit) var(--espace-petit);
+  border: 1px solid var(--couleur-principale);
+  border-radius: var(--espace-petit);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.fiche-enchere__choix button:hover {
+  background-color: var(--couleur-tertiaire);
+  color: var(--fond-blanc);
+}
+
+.fiche-enchere__champ {
+  padding: var(--espace-petit);
+  border-radius: var(--espace-petit);
+}
+
+/* expert */
+.fiche-enchere__expert {
+  display: flex;
+  gap: var(--espace-standard);
+  align-items: center;
+}
+
+.fiche-enchere__expert img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.fiche-enchere__expert-nom,
+.fiche-enchere__expert-lien {
+  font-weight: bold;
+}
+
+.fiche-enchere__expert-lien {
+  text-decoration: none;
+  color: var(--couleur-tertiaire);
+}
+
+/* réseaux */
+.fiche-enchere__reseaux a {
+  text-decoration: none;
+}
+
+/* media query */
+@media (max-width: 900px) {
+  .fiche-enchere__contenu {
+    flex-direction: column;
+    align-items: center;
+    padding: var(--espace-standard);
+  }
+
+  .fiche-enchere__galerie {
+    padding-left: 0;
+    max-width: 300px;
+  }
+
+  .fiche-enchere__details {
+    max-width: 100%;
+    padding-top: var(--espace-standard);
+  }
+}
